@@ -1,0 +1,79 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle setup
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+" Line folding
+Plugin 'tmhedberg/SimpylFold'
+" Powerline status bar
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+" Spell checker
+Plugin 'kamykn/spelunker.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+"
+
+" For Python
+set encoding=utf-8
+
+" syntax highlighting
+syntax on
+
+" indent
+"set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" line numbers
+set number
+
+" highlight things found in search
+set hlsearch
+
+" search as characters are entered
+set incsearch
+
+" set size of window
+"set columns=200
+"set lines=95
+
+" dark background in graphic mode
+"set background=dark
+"highlight Normal ctermfg=grey ctermbg=black
+
+" fix backspace problems
+set backspace=indent,eol,start
+" make sure words don't break over a line
+set wrap linebreak nolist
+
+" highlight current line
+"set cursorline
+
+" easy word wrap scrolling
+noremap j gj
+noremap k gk
+
+" See filename
+set laststatus=2
+set statusline=%f
