@@ -13,7 +13,7 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 function create_project {
     if [ -z \"\$1\" ]; then 
         echo "Provide a project name."
-        echo "$ ./new-project-virtualenv.sh PROJECT_NAME"
+        echo "create_project PROJECT_NAME"
         return
     fi
 

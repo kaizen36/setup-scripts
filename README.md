@@ -15,6 +15,8 @@ Install essential development tools and Python 3
 . debian/install.sh 
 ```
 
+## pip & virtualenv
+
 Install virtualenv and jupyter
 ```
 . py/install-virtualenv.sh
@@ -24,6 +26,15 @@ You can now create new python projects using
 ```
 create_project my-new-project
 ```
+
+## conda (miniconda)
+
+Install conda and jupyter
+```
+. py/install-conda.sh
+```
+
+## git config
 
 Setup git config for writing back to git
 ```
